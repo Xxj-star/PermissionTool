@@ -66,7 +66,7 @@ dependencies {
 
 ### 欢迎加入QQ交流群（Q群574181465）
 
-![image text](https://github.com/xuxinjiang/PermissionTool/blob/master/gif/qqqun.png)
+![image text](https://github.com/xuxinjiang/PermissionTool/blob/master/gif/xxjqq.png)
 
 
 
