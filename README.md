@@ -54,7 +54,7 @@ PermissionUtil.builder(this).addPermissions(array).addPerName("定位").execute(
 ## build.gradle设置
 ```
 dependencies {
- implementation 'com.github.xuxinjiang:Schedule-master:v1.0'
+ implementation 'com.github.xuxinjiang:PermissionTool:v1.0'
 }
 ```
 # 演示（请star支持）
