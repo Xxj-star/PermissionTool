@@ -3,17 +3,20 @@
 
 
 # 功能
-```
- 可以实现全面监听事件。
- 添加一个权限，如：Manifest.permission.READ_CALENDAR
- 添加一个权限组，如：PermissionInit.CAMERA
- 添加多个权限组，如:PermissionInit.CAMERA,PermissionInit.LOCATION
- 添加多个权限，如list.add(Manifest.permission.READ_CALENDAR)
- 添加多个权限组，如：list.add(PermissionInit.CAMERA)
- 是否弹出对话框，默认true
- 添加权限名称
- 如果用户禁止运行，框架会弹出跳转设置界面开启权限
-```
+
+支持单个权限、多个权限、单个权限组、多个权限组请求
+
+不指定权限则自动获取清单文件上的危险权限进行申请
+
+如果动态申请的权限没有在清单文件中注册会抛出异常
+
+支持大部分国产手机直接跳转到具体的权限设置页面
+
+可设置被拒绝后继续申请，直到用户授权或者永久拒绝
+
+支持请求6.0及以上的悬浮窗权限和8.0及以上的安装权限
+
+本框架不依赖AppCompatSupport库，兼容Eclipse和Studio
 
 # 使用方法：
 ```
