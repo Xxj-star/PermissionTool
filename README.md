@@ -3,6 +3,7 @@
 
 
 # 功能
+```
  可以实现全面监听事件。
  添加一个权限，如：Manifest.permission.READ_CALENDAR
  添加一个权限组，如：PermissionInit.CAMERA
@@ -12,7 +13,7 @@
  是否弹出对话框，默认true
  添加权限名称
  如果用户禁止运行，框架会弹出跳转设置界面开启权限
-
+```
 
 # 使用方法：
 ```
