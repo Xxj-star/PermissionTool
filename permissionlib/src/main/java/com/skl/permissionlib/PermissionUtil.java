@@ -188,6 +188,12 @@ public class PermissionUtil {
             this.context = context;
         }
 
+        /**
+         * 添加权限名称
+         *
+         * @param name
+         * @return
+         */
         public Builder addPerName(@Nullable String name) {
             if (name != null) {
                 this.permissionsName = name;
