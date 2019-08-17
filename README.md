@@ -49,7 +49,7 @@ PermissionUtil.builder(this).addPermissions(array).addPerName("定位").execute(
 
 # 当前版本
 
-[![release](https://img.shields.io/badge/release-v1.0-orange.svg)](https://github.com/xuxinjiang/Schedule-master/blob/master/update.md)
+[![release](https://img.shields.io/badge/release-v1.0-orange.svg)](https://github.com/xuxinjiang/PermissionTool/blob/master/update.md)
 
 ## build.gradle设置
 ```
