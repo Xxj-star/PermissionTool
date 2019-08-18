@@ -62,7 +62,7 @@ dependencies {
 ```
 # 演示（请star支持）
 
-![image text](https://github.com/xuxinjiang/PermissionTool/blob/master/gif/untitled.gif)
+![image text](https://github.com/xuxinjiang/PermissionTool/blob/master/gif/shijina.gif)
 
 # 联系方式
 
