@@ -5,14 +5,22 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.Manifest;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import com.skl.permissionlib.PermissionUtil;
 import com.skl.permissionlib.PermissionsInterface;
+import com.skl.permissiontool.springyanimator.SpringAnimationType;
+import com.skl.permissiontool.springyanimator.SpringyAnimator;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+
+
+    //可以传数组,还可以传单个多个
+    String[] array = new String[]{
+            Manifest.permission.ACCESS_COARSE_LOCATION,
+            Manifest.permission.ACCESS_FINE_LOCATION,
+            Manifest.permission.READ_PHONE_STATE};
 
     /**
      * @param savedInstanceState
@@ -22,18 +30,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //可以传数组,还可以传单个多个
-        String[] array = new String[]{
-                Manifest.permission.ACCESS_COARSE_LOCATION,
-                Manifest.permission.ACCESS_FINE_LOCATION,
-                Manifest.permission.READ_PHONE_STATE};
+    }
 
-        //可以传list集合
-        List<String> list = new ArrayList<>();
-        list.add(Manifest.permission.ACCESS_COARSE_LOCATION);
-        list.add(Manifest.permission.ACCESS_COARSE_LOCATION);
-        list.add(Manifest.permission.ACCESS_COARSE_LOCATION);
-
+    public void helloClick(View view) {
         PermissionUtil.builder(this).addPermissions(array).addPerName("定位").execute(new PermissionsInterface() {
             @Override
             public void allAgree() {
@@ -60,6 +59,15 @@ public class MainActivity extends AppCompatActivity {
                 Log.e("yyy", "-----------被拒绝且选择了不再提示的权限---------->" + permission);
             }
         });
-
     }
+
+    /**
+     * 点击缩放动画
+     */
+    public static void animateView(View view) {
+        SpringyAnimator springHelper = new SpringyAnimator(SpringAnimationType.SCALEXY, 500, 4, 0, 1);
+        springHelper.startSpring(view);
+    }
+
+
 }
